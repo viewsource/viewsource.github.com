@@ -52,6 +52,11 @@ http://viewsource.github.com/jquery/latest/jquery.js
 ## Host your own!
 Simply fork this project to host your own GitHub Pages CDN. You will need to fork and then do a commit and push to GitHub before they will setup your GitHub Pages hosting.
 
+Here's my personal fork...
+http://chrisjacob.github.com/viewsource.github.com/jquery/latest/jquery.js
+
+**Tip:** the repository only has a `gh-pages` branch; there is no additional `master` branch. So you only need to do `git push` when pushing to GitHub... which is much easier to type then `git push origin gh-pages`.
+
 ## Inspired by
 [Github as a CDN - Cache your JavaScripts, Stylesheets, and Web Assets with Github Pages](http://viatropos.com/blog/github-as-a-cdn/)   
 
