@@ -15,6 +15,7 @@ http://viewsource.github.com/jquery/1.6.2/jquery.js
 GitHub Pages assets are gzip'ed... which can compress the response by as high as 70%!
 
 **Response Headers**  
+
 ````
 HTTP/1.1 200 OK  
 Server: nginx/1.0.4  
