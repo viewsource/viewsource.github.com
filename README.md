@@ -1,13 +1,10 @@
 # Open Source GitHub Pages CDN
-
-An **extensive archive** of popular - and less popular - open source projects.
+An extensive *archive* of popular *and less popular* open source projects.
 
 http://viewsource.github.com
 
 ## Why?
-Why not.
-
-Because this is a community driven resource - unlike the "big" CDNs - we can can add those little projects you love... and when we add a project we take the time to *properly* archive it as far back as possible... jquery v1.0.0 anyone?
+This is a community driven resource. So unlike the "big" CDNs we can can add those little projects you love... and when we add a project we take the time to *properly* archive it as far back as possible; jquery v1.0.0 anyone?
 
 ## When?
 Personally when I'm prototyping a demo on http://jsbin.com or http://jsfiddle.net and I need to pull in some common library or resource then these URLs are just dead simple to remember...
@@ -19,20 +16,24 @@ GitHub Pages assets are gzip'ed... which can compress the response by as high as
 
 **Response Headers**  
 ````
-HTTP/1.1 200 OK
-Server: nginx/1.0.4
-Date: Sat, 16 Jul 2011 12:33:57 GMT
-Content-Type: application/x-javascript
-Last-Modified: Sat, 16 Jul 2011 12:08:22 GMT
-Transfer-Encoding: chunked
-Connection: keep-alive
-Expires: Sun, 17 Jul 2011 12:33:57 GMT
-Cache-Control: max-age=86400
-Content-Encoding: gzip
+HTTP/1.1 200 OK  
+Server: nginx/1.0.4  
+Date: Sat, 16 Jul 2011 12:33:57 GMT  
+Content-Type: application/x-javascript  
+Last-Modified: Sat, 16 Jul 2011 12:08:22 GMT  
+Transfer-Encoding: chunked  
+Connection: keep-alive  
+Expires: Sun, 17 Jul 2011 12:33:57 GMT  
+Cache-Control: max-age=86400  
+Content-Encoding: gzip  
 ```` 
 
 ## Use GitHub for file browsing the CDN
-If you go to http://viewsource.github.com/jquery it will redirect you to GitHub to see what versions we've got archived in the CDN! If you navigate down to a specific file (e.g. "1.6.2/jquery.js" at  https://github.com/viewsource/viewsource.github.com/blob/gh-pages/jquery/1.6.2/jquery.js) you will see at the end of the `viewsource.github.com / jquery / 1.6.2 / jquery.js` path there is a little "copy to clipboard" icon. This will copy `jquery/1.6.2/jquery.js` to your clipboard... simply paste that onto the end of `http://viewsource.github.com/` and BAM you've got http://viewsource.github.com/jquery/1.6.2/jquery.js
+If you go to http://viewsource.github.com/jquery it will redirect you to GitHub to see what versions we've got archived for jQuery in the CDN.
+
+If you navigate down to a specific file e.g. jQuery 1.6.2 at  https://github.com/viewsource/viewsource.github.com/blob/gh-pages/jquery/1.6.2/jquery.js then simply remove `https://github.com/viewsource/` and `/blob/gh-pages` from the URL and click Enter/Return then BAM you've got http://viewsource.github.com/jquery/1.6.2/jquery.js
+ 
+Alternatively you will see at the end of the `viewsource.github.com / jquery / 1.6.2 / jquery.js` breadcumb path there is a little "copy to clipboard" icon. This will copy `jquery/1.6.2/jquery.js` to your clipboard... simply paste that onto the end of `http://viewsource.github.com/` and you've got your url.
 
 ## Consistent and predictable versioning
 We "normalize" the version numbers and remove them from the filenames e.g. `jquery-1.6.js` is archived under `/jquery/1.6.0/jquery.js` - notice the extra `.0` in our folder, this makes switching between versions simple:
